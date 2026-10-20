@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — MoneySled</title>
+<meta name="description" content="How MoneySled collects, uses, stores and deletes your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --surface: #ffffff;
+    --text: #1c1b19;
+    --muted: #5f5c57;
+    --rule: #e3dfd8;
+    --accent: #2f6f4f;
+    --accent-soft: #eef4f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161513;
+      --surface: #1e1d1a;
+      --text: #eceae5;
+      --muted: #a7a29a;
+      --rule: #322f2b;
+      --accent: #7cc4a0;
+      --accent-soft: #1f2a24;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513;
+    --surface: #1e1d1a;
+    --text: #eceae5;
+    --muted: #a7a29a;
+    --rule: #322f2b;
+    --accent: #7cc4a0;
+    --accent-soft: #1f2a24;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.68;
+    font-optical-sizing: auto;
+  }
+
+  .wrap {
+    max-width: 44rem;
+    margin: 0 auto;
+    padding: 4rem 16px 6rem;
+  }
+
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.75rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.75rem;
+  }
+
+  .dek {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0;
+  }
+
+  .meta {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 1.25rem;
+    line-height: 1.8;
+  }
+
+  h2 {
+    font-size: 1.32rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 2.9rem 0 0.85rem;
+    padding-top: 0.4rem;
+  }
+
+  h2 .num {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--accent);
+    margin-right: 0.6rem;
+    vertical-align: 0.18em;
+  }
+
+  h3 {
+    font-size: 1.02rem;
+    font-weight: 600;
+    margin: 1.8rem 0 0.5rem;
+  }
+
+  p { margin: 0 0 1.1rem; }
+
+  ul { margin: 0 0 1.2rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.55rem; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+  strong { font-weight: 600; }
+
+  code, .mono {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.86em;
+  }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .table-scroll { overflow-x: auto; margin: 1.3rem 0 1.6rem; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.93rem;
+    min-width: 30rem;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.7rem 0.9rem 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    border-bottom-color: var(--text);
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  footer p { margin-bottom: 0.5rem; }
+
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .wrap { padding-top: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">MoneySled</p>
+    <h1>Privacy Policy</h1>
+    <p class="dek">What MoneySled collects, why, where it is stored, and how to get rid of it.</p>
+    <p class="meta">
+      Last updated: 20 October 2026<br>
+      Operated by: Maja Petrovic, Pennsylvania, United States<br>
+      Contact: <a href="mailto:support@moneysled.com">support@moneysled.com</a>
+    </p>
+  </header>
+
+  <p>MoneySled is a personal budgeting app. You photograph or scan a receipt, the app reads it, and it keeps the
+  resulting numbers so you can track spending, compare prices and store warranty records. This policy explains
+  exactly what that involves.</p>
+
+  <p>It is written plainly on purpose. If anything here is unclear, write to
+  <a href="mailto:support@moneysled.com">support@moneysled.com</a> and ask.</p>
+
+  <div class="callout">
+    <p><strong>The short version.</strong> MoneySled stores the text read from your receipts, not the photographs.
+    Receipt images are deleted from the server as soon as they have been processed. Your data is not sold, not
+    shared with advertisers, and not used to build a profile of you. You can delete your account and everything
+    in it from inside the app at any time.</p>
+  </div>
+
+  <h2><span class="num">1</span>Who is responsible for your data</h2>
+
+  <p>MoneySled is operated by Maja Petrovic, an independent developer based in Pennsylvania, United States, who
+  is the data controller for the purposes of data protection law. In this policy, "we" and "us" mean MoneySled.</p>
+
+  <p>No advertising network, data broker or other third party has access to your account. The only outside
+  services involved are the infrastructure providers listed in section 6.</p>
+
+  <h2><span class="num">2</span>What MoneySled collects</h2>
+
+  <h3>Information you provide</h3>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Why it exists</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Email address and password</td>
+        <td>To create and sign in to your account. Passwords are stored only as a cryptographic hash and cannot be read by anyone, including us.</td>
+      </tr>
+      <tr>
+        <td>Receipt photographs and QR codes</td>
+        <td>To be read by the app so the items and totals can be extracted.</td>
+      </tr>
+      <tr>
+        <td>Receipt contents</td>
+        <td>Store name and address, date, line items, prices, subtotal, tax, tip, shipping and total, and the currency. This is the data the app exists to keep.</td>
+      </tr>
+      <tr>
+        <td>Warranty records</td>
+        <td>Item name, purchase date, expiry or coverage, notes, and any photographs you attach to a warranty.</td>
+      </tr>
+      <tr>
+        <td>Budgets, categories, shopping lists and favourite stores</td>
+        <td>Features you choose to use. Entirely optional.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3>Information collected automatically</h3>
+
+  <p>Server logs record the time of a request, the endpoint called and error details when something fails. These
+  keep the service running and help diagnose faults. They are not used to track you across apps or websites.</p>
+
+  <p>MoneySled contains no advertising, no advertising identifiers and no third-party analytics or tracking
+  software.</p>
+
+  <h2><span class="num">3</span>How receipt images are handled</h2>
+
+  <p>This is the part people most often ask about, so it is set out step by step.</p>
+
+  <ul>
+    <li>You take or select a photograph of a receipt in the app.</li>
+    <li>The image is uploaded over an encrypted connection to the MoneySled server.</li>
+    <li>The image is passed to a machine-learning model that reads the text and returns structured data: store,
+      date, items, prices and totals.</li>
+    <li>The structured data is saved to your account.</li>
+    <li><strong>The image file is then deleted from the server.</strong> It is not archived, not backed up and not
+      retained for training.</li>
+  </ul>
+
+  <p>Receipt images are never used to train or fine-tune any machine-learning model, and the model provider is
+  not permitted to retain them for that purpose.</p>
+
+  <p>Photographs you attach to a <em>warranty</em> record are treated differently, because the point of them is to
+  keep the receipt or document for the length of the warranty. Those are stored in a private storage bucket,
+  readable only through short-lived signed links issued to your account, and deleted when you delete the warranty
+  or your account.</p>
+
+  <h2><span class="num">4</span>How your data is used</h2>
+
+  <p>Your data is used to provide the features you are using, and for nothing else:</p>
+
+  <ul>
+    <li>Reading receipts and storing the results in your account.</li>
+    <li>Showing you totals, category breakdowns and monthly analytics.</li>
+    <li>Tracking budgets you set.</li>
+    <li>Looking up current prices for an item so you can compare what you paid.</li>
+    <li>Reminding you about warranties that are expiring.</li>
+    <li>Sending essential account email, such as password resets.</li>
+  </ul>
+
+  <p>Your data is not sold. It is not rented, licensed or shared for advertising, and it is not used to build an
+  advertising or credit profile of you.</p>
+
+  <h2><span class="num">5</span>Price data retained after deletion</h2>
+
+  <p>When a receipt is read, MoneySled separately records that <em>a given item cost a given price at a given
+  store on a given date</em>. These price records carry no link to your account, your email address or your
+  identity. They cannot be traced back to you.</p>
+
+  <p>They power price comparison, and in future will support price trends and predictions. Because they are not
+  personal data, they are kept when an account is deleted. Were that not the case, one deletion would degrade the
+  feature for everyone else.</p>
+
+  <div class="callout">
+    <p>To be explicit about the trade-off: if you delete your account, your receipts, items, warranties, budgets
+    and photographs are removed, but anonymous records of the form <span class="mono">"milk, Kroger, $3.49,
+    2026-04-02"</span> remain in the price history. Nothing in those records identifies you.</p>
+  </div>
+
+  <h2><span class="num">6</span>Who else processes your data</h2>
+
+  <p>MoneySled relies on a small number of service providers. Each processes data only as needed to run the
+  service, under its own terms.</p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Provider</th><th>Role</th><th>What it handles</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Supabase</td><td>Database and file storage</td><td>Your account record, receipts, items, warranties, budgets and warranty photographs</td></tr>
+      <tr><td>Render</td><td>Application hosting</td><td>Runs the MoneySled server; processes requests in transit</td></tr>
+      <tr><td>Modal</td><td>Machine-learning inference</td><td>Receives a receipt image, returns the text read from it; the image is not retained</td></tr>
+      <tr><td>Resend</td><td>Transactional email</td><td>Your email address, to deliver account email such as password resets</td></tr>
+      <tr><td>Apple, Google</td><td>App distribution and payments</td><td>Purchase and subscription handling. MoneySled never receives your card details.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>Price comparison may fetch publicly listed prices from retailer websites. That lookup sends the item name
+  being searched; it does not send your identity, your account details or anything else from your receipts.</p>
+
+  <h2><span class="num">7</span>Links to other websites</h2>
+
+  <p>Price comparison shows where an item is sold, and opening a result takes you to that retailer's website in
+  your browser. Once you leave MoneySled you are on their site and under their privacy policy, and they may set
+  their own cookies or record your visit.</p>
+
+  <p>MoneySled does not send your account, your email address or anything from your receipts to those sites. The
+  only thing that travels with you is the page you chose to open.</p>
+
+  <!--
+    AFFILIATE DISCLOSURE - NOT ACTIVE YET.
+
+    Uncomment the paragraph below only once an affiliate programme is
+    actually live. At the same time:
+      - add an on-screen disclosure to the price comparison screen
+        (FTC rules require it where the link appears, not only here)
+      - update the App Store and Google Play privacy questionnaires
+
+    <p>Some of these links are affiliate links, which means MoneySled may
+    earn a commission if you buy something after following one. This never
+    changes the price you pay, and it never changes which results are shown
+    or the order they appear in. Nothing from your account or your receipts
+    is passed to the retailer or to the affiliate network; attribution uses
+    a random, single-use reference that is not linked to you.</p>
+  -->
+
+  <h2><span class="num">8</span>Where your data is held, and for how long</h2>
+
+  <p>Data is stored on servers in the United States. If you use MoneySled from outside the United States,
+  including from Serbia or the European Economic Area, your data is transferred there. It is protected by the
+  measures described in this policy regardless of where you are.</p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Data</th><th>Kept for</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Receipt images</td><td>Minutes. Deleted as soon as processing finishes.</td></tr>
+      <tr><td>Account, receipts, items, warranties, budgets</td><td>Until you delete them, or you delete your account.</td></tr>
+      <tr><td>Warranty photographs</td><td>Until you delete the warranty or your account.</td></tr>
+      <tr><td>Anonymous price records</td><td>Indefinitely. Not linked to you (see section 5).</td></tr>
+      <tr><td>Server logs</td><td>A short rolling window, as retained by the hosting provider.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2><span class="num">9</span>Your rights and how to use them</h2>
+
+  <p>You can do all of the following yourself, from inside the app:</p>
+
+  <ul>
+    <li><strong>See your data.</strong> Everything stored about you is visible in the app.</li>
+    <li><strong>Correct it.</strong> Any receipt, item, total or warranty can be edited.</li>
+    <li><strong>Export it.</strong> Receipts can be exported to CSV.</li>
+    <li><strong>Delete part of it.</strong> Individual receipts, items, warranties and budgets can be deleted.</li>
+    <li><strong>Delete all of it.</strong> Deleting your account removes your account record, receipts, items,
+      warranties, budgets and warranty photographs.</li>
+  </ul>
+
+  <p>Depending on where you live you may also have statutory rights to access, correct, delete, restrict or
+  object to the processing of your personal data, to receive it in a portable form, and to complain to a data
+  protection authority. California residents have the right not to be discriminated against for exercising these
+  rights; MoneySled does not sell personal information, so there is no sale to opt out of.</p>
+
+  <p>To exercise any right the app does not already cover, write to
+  <a href="mailto:support@moneysled.com">support@moneysled.com</a>. Requests are answered within 30 days.</p>
+
+  <h2><span class="num">10</span>Age restriction</h2>
+
+  <p>MoneySled is not intended for anyone under 16 and is not directed at children. Accounts are not knowingly
+  created for or by people under 16, and the app contains nothing aimed at children.</p>
+
+  <p>If you believe someone under 16 has created an account, write to
+  <a href="mailto:support@moneysled.com">support@moneysled.com</a> and it will be deleted.</p>
+
+  <h2><span class="num">11</span>Security</h2>
+
+  <p>All traffic between the app and the server is encrypted in transit using TLS. Data is encrypted at rest by
+  the database and storage provider. Passwords are stored only as hashes. Warranty photographs sit in a private
+  bucket that is not publicly reachable, and are served only through short-lived signed links tied to your
+  account. Access to production systems is strictly limited.</p>
+
+  <p>No system is perfectly secure, and it would be dishonest to claim otherwise. If a breach affecting your
+  personal data occurs, affected users will be notified without undue delay, and any applicable authority will be
+  notified as the law requires.</p>
+
+  <h2><span class="num">12</span>Changes to this policy</h2>
+
+  <p>If this policy changes, the date at the top of the page changes with it. Material changes, such as a new
+  category of data or a new provider, will be announced in the app before they take effect. Continuing to use
+  MoneySled after a change means you accept the updated policy.</p>
+
+  <h2><span class="num">13</span>Contact</h2>
+
+  <p>For any question about this policy, about your data, or to make a request about it:</p>
+
+  <p><a href="mailto:support@moneysled.com">support@moneysled.com</a></p>
+
+  <p>Email goes straight to the person who builds MoneySled and is answered within 30 days, usually much
+  sooner.</p>
+
+  <footer>
+    <p>MoneySled &middot; Pennsylvania, United States</p>
+    <p>Last updated 20 October 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
