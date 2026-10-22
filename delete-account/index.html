@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delete your MoneySled account</title>
+<meta name="description" content="How to delete your MoneySled account and what happens to your data.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfaf8;
+    --text: #1c1b19;
+    --muted: #5f5c57;
+    --rule: #e3dfd8;
+    --accent: #2f6f4f;
+    --accent-soft: #eef4f0;
+    --warn: #8a5a1f;
+    --warn-soft: #fbf3e6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #161513;
+      --text: #eceae5;
+      --muted: #a7a29a;
+      --rule: #322f2b;
+      --accent: #7cc4a0;
+      --accent-soft: #1f2a24;
+      --warn: #d8ac6a;
+      --warn-soft: #2a2317;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #161513;
+    --text: #eceae5;
+    --muted: #a7a29a;
+    --rule: #322f2b;
+    --accent: #7cc4a0;
+    --accent-soft: #1f2a24;
+    --warn: #d8ac6a;
+    --warn-soft: #2a2317;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.68;
+    font-optical-sizing: auto;
+  }
+
+  .wrap { max-width: 42rem; margin: 0 auto; padding: 4rem 16px 6rem; }
+
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.75rem; margin-bottom: 2.5rem; }
+
+  .eyebrow {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.9rem;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 5.5vw, 2.7rem);
+    line-height: 1.14;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.75rem;
+  }
+
+  .dek { color: var(--muted); font-size: 1.05rem; margin: 0; }
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 2.6rem 0 0.8rem;
+  }
+
+  p { margin: 0 0 1.1rem; }
+
+  ol.steps {
+    margin: 0 0 1.4rem;
+    padding-left: 0;
+    list-style: none;
+    counter-reset: step;
+  }
+  ol.steps li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 2.6rem;
+    margin-bottom: 0.9rem;
+  }
+  ol.steps li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0.18em;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.85rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ul { margin: 0 0 1.2rem; padding-left: 1.3rem; }
+  li { margin-bottom: 0.5rem; }
+
+  a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  strong { font-weight: 600; }
+
+  .callout {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .callout p:last-child { margin-bottom: 0; }
+
+  .warn {
+    background: var(--warn-soft);
+    border-left: 3px solid var(--warn);
+    padding: 1.1rem 1.25rem;
+    margin: 1.5rem 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .warn p:last-child { margin-bottom: 0; }
+
+  .table-scroll { overflow-x: auto; margin: 1.3rem 0 1.6rem; }
+  table { width: 100%; border-collapse: collapse; font-size: 0.93rem; min-width: 28rem; }
+  th, td {
+    text-align: left;
+    padding: 0.7rem 0.9rem 0.7rem 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+  th {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 500;
+    border-bottom-color: var(--text);
+  }
+
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  footer p { margin-bottom: 0.5rem; }
+
+  @media (max-width: 600px) {
+    body { font-size: 17px; }
+    .wrap { padding-top: 2.5rem; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <p class="eyebrow">MoneySled</p>
+    <h1>Delete your account</h1>
+    <p class="dek">How to delete your MoneySled account, and exactly what happens to your data when you do.</p>
+  </header>
+
+  <h2>Delete it yourself, in the app</h2>
+
+  <p>This is the fastest way and takes under a minute. Nothing is queued or reviewed — the deletion happens
+  immediately.</p>
+
+  <ol class="steps">
+    <li>Open <strong>MoneySled</strong> and sign in.</li>
+    <li>Tap the <strong>person icon</strong> in the top right of the home screen to open <strong>Profile</strong>.</li>
+    <li>Scroll to the bottom and tap <strong>Delete account</strong>.</li>
+    <li>Confirm when asked. Your account and its contents are removed straight away.</li>
+  </ol>
+
+  <div class="warn">
+    <p><strong>This cannot be undone.</strong> There is no recovery period and no way to restore a deleted account.
+    If you want to keep a copy of your receipts, export them to CSV from the app before you delete.</p>
+  </div>
+
+  <h2>Or ask us to delete it</h2>
+
+  <p>If you can't sign in, or you'd rather we did it, write to
+  <a href="mailto:support@moneysled.com">support@moneysled.com</a> from the email address on the account, with
+  "Delete my account" as the subject.</p>
+
+  <p>We'll confirm by reply and complete the deletion within 30 days, usually within a few days. We may ask you to
+  confirm the request from the account's email address, so that nobody else can delete your data.</p>
+
+  <h2>What gets deleted</h2>
+
+  <p>Everything connected to your account:</p>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Data</th><th>What happens</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Your account and email address</td><td>Deleted</td></tr>
+      <tr><td>Receipts, line items, prices and totals</td><td>Deleted</td></tr>
+      <tr><td>Warranties, including photographs</td><td>Deleted from storage</td></tr>
+      <tr><td>Budgets and categories</td><td>Deleted</td></tr>
+      <tr><td>Shopping lists and favourite stores</td><td>Deleted</td></tr>
+      <tr><td>Receipt photographs</td><td>Already gone — deleted from the server minutes after each scan</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>What is kept, and why</h2>
+
+  <p>One thing is kept, and it isn't connected to you.</p>
+
+  <div class="callout">
+    <p>When a receipt is read, MoneySled separately records that <strong>an item cost a given price at a given store
+    on a given date</strong> — for example <em>"milk, Kroger, $3.49, 2 April 2026"</em>. These records carry no link
+    to your account, your email address or your identity, and cannot be traced back to you. They power the price
+    comparison feature for everyone, so they are kept after an account is deleted.</p>
+  </div>
+
+  <p>Because those records are not personal data, they are not covered by a deletion request. Nothing in them
+  identifies you.</p>
+
+  <h2>Timing</h2>
+
+  <div class="table-scroll">
+  <table>
+    <thead>
+      <tr><th>Method</th><th>When it happens</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Deleted in the app</td><td>Immediately</td></tr>
+      <tr><td>Requested by email</td><td>Within 30 days, usually a few days</td></tr>
+      <tr><td>Encrypted backups held by our hosting provider</td><td>Overwritten on their routine cycle shortly afterwards</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Questions</h2>
+
+  <p><a href="mailto:support@moneysled.com">support@moneysled.com</a></p>
+
+  <p>Full details of what MoneySled collects and how long it is kept are in the
+  <a href="../privacy/">Privacy Policy</a>.</p>
+
+  <footer>
+    <p>MoneySled &middot; Pennsylvania, United States</p>
+    <p><a href="../privacy/">Privacy Policy</a> &middot; <a href="../support/">Support</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
