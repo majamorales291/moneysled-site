@@ -232,8 +232,8 @@
         <td>To create and sign in to your account. Passwords are stored only as a cryptographic hash and cannot be read by anyone, including us.</td>
       </tr>
       <tr>
-        <td>Receipt photographs and QR codes</td>
-        <td>To be read by the app so the items and totals can be extracted.</td>
+        <td>Receipt photographs, PDFs and QR codes</td>
+        <td>To be read by the app so the items and totals can be extracted. You can photograph a receipt, choose an image or PDF from your device, or scan a fiscal QR code.</td>
       </tr>
       <tr>
         <td>Receipt contents</td>
@@ -256,25 +256,33 @@
   <p>Server logs record the time of a request, the endpoint called and error details when something fails. These
   keep the service running and help diagnose faults. They are not used to track you across apps or websites.</p>
 
-  <p>MoneySled contains no advertising, no advertising identifiers and no third-party analytics or tracking
-  software.</p>
+  <p>When someone opens a shop from a price comparison result, MoneySled adds one to a counter for that shop. The
+  record holds the shop's name, the country and the time — nothing else. It is not linked to your account, your
+  email address or any identifier, so it cannot be traced back to you, and it tells us only which retailers are
+  worth supporting.</p>
 
-  <h2><span class="num">3</span>How receipt images are handled</h2>
+  <p>The item you search for is sent to the shops being checked so they can return prices. It is not stored
+  anywhere afterwards.</p>
+
+  <p>MoneySled contains no advertising, no advertising identifiers and no third-party analytics or tracking
+  software. Nothing described here is shared with anyone, used to profile you, or used for marketing.</p>
+
+  <h2><span class="num">3</span>How receipt images and files are handled</h2>
 
   <p>This is the part people most often ask about, so it is set out step by step.</p>
 
   <ul>
-    <li>You take or select a photograph of a receipt in the app.</li>
-    <li>The image is uploaded over an encrypted connection to the MoneySled server.</li>
-    <li>The image is passed to a machine-learning model that reads the text and returns structured data: store,
-      date, items, prices and totals.</li>
+    <li>You photograph a receipt, or choose an image or PDF already on your device.</li>
+    <li>The file is uploaded over an encrypted connection to the MoneySled server.</li>
+    <li>It is passed to a machine-learning model that reads the text and returns structured data: store, date,
+      items, prices and totals.</li>
     <li>The structured data is saved to your account.</li>
-    <li><strong>The image file is then deleted from the server.</strong> It is not archived, not backed up and not
+    <li><strong>The file is then deleted from the server.</strong> It is not archived, not backed up and not
       retained for training.</li>
   </ul>
 
-  <p>Receipt images are never used to train or fine-tune any machine-learning model, and the model provider is
-  not permitted to retain them for that purpose.</p>
+  <p>Receipt images and files are never used to train or fine-tune any machine-learning model, and the model
+  provider is not permitted to retain them for that purpose.</p>
 
   <p>Photographs you attach to a <em>warranty</em> record are treated differently, because the point of them is to
   keep the receipt or document for the length of the warranty. Those are stored in a private storage bucket,
@@ -312,6 +320,9 @@
     and photographs are removed, but anonymous records of the form <span class="mono">"milk, Kroger, $3.49,
     2026-04-02"</span> remain in the price history. Nothing in those records identifies you.</p>
   </div>
+
+  <p>The same applies to the per-shop click counts described in section 2. They carry no link to any account, so
+  there is nothing in them to delete.</p>
 
   <h2><span class="num">6</span>Who else processes your data</h2>
 
@@ -374,7 +385,9 @@
       <tr><th>Data</th><th>Kept for</th></tr>
     </thead>
     <tbody>
-      <tr><td>Receipt images</td><td>Minutes. Deleted as soon as processing finishes.</td></tr>
+      <tr><td>Receipt images and PDFs</td><td>Minutes. Deleted as soon as processing finishes.</td></tr>
+      <tr><td>Price searches</td><td>Not stored at all.</td></tr>
+      <tr><td>Anonymous per-shop click counts</td><td>Indefinitely. Not linked to you (see section 5).</td></tr>
       <tr><td>Account, receipts, items, warranties, budgets</td><td>Until you delete them, or you delete your account.</td></tr>
       <tr><td>Warranty photographs</td><td>Until you delete the warranty or your account.</td></tr>
       <tr><td>Anonymous price records</td><td>Indefinitely. Not linked to you (see section 5).</td></tr>
